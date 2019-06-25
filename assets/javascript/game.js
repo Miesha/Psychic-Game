@@ -1,13 +1,25 @@
 
 
-var alpha = [];
+var alpha = ['a', 'b', 'c','d', 'e', 'f', 'g','h', 'i','j', 'k','l', 'm' ,'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 var wins = 0;
 var losses = 0;
 var correctGuess = true;
-var displayGuess = 0;
+var numGuess = 0; 
+var userChoice = 0;
 
 
-        
+console.log(alpha.length);
+
+
+// if(correctGuess.indexOf(aphla.toLowerCase()) > -1){
+//     alert(variableforcorrectguess + 'is exactly what I was thinking !');     
+// }
+
+// else  {
+//   document.write( userChoice + "ain't it " + numGuess + 'more to go!');
+// }
+
+
 // char[] alpha = "abcdefghijklmnopqrstuvwxyz".toCharArray();
 // psuedo code 
 /* create an onkey function?
