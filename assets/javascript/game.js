@@ -27,10 +27,17 @@ document.onkeyup = function(event) {
       if ((userGuess === computerGuess)) {
 
         // Alert the userGuess and computerGuess
-        alert("User guess: " + userGuess);
-        alert("Computer guess: " + computerGuess);
-
+        alert(userGuess + " is the correct! You are psychic");
+        
+      
       }
+
+      else {
+        alert("That ain't it")
+      
+      }
+
+      
 
 }
 
