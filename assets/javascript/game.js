@@ -1,6 +1,6 @@
 
 
-var alpha = ['a', 'b', 'c','d', 'e', 'f', 'g','h', 'i','j', 'k','l', 'm' ,'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+var computerChoices= ['a', 'b', 'c','d', 'e', 'f', 'g','h', 'i','j', 'k','l', 'm' ,'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 var wins = 0;
 var losses = 0;
 var correctGuess = true;
@@ -8,8 +8,19 @@ var numGuess = 0;
 var userChoice = 0;
 
 
-console.log(alpha.length);
+console.log(computerChoices.length);
 
+
+document.onkeyup = function() {
+
+    // Determines which key was pressed.
+    // var userChoice = event.key;
+
+    // Randomly chooses a choice from the options array. This is the Computer's guess.
+    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    console.log(computerGuess)
+
+}
 
 // if(correctGuess.indexOf(aphla.toLowerCase()) > -1){
 //     alert(variableforcorrectguess + 'is exactly what I was thinking !');     
