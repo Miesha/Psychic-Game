@@ -1,21 +1,19 @@
 
 
-var computerChoices= ['a', 'b', 'c','d', 'e', 'f', 'g','h', 'i','j', 'k','l', 'm' ,'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+var computerChoices= ['b', 'c','d', 'e', 'f', 'g','h', 'i','j', 'k','l', 'm' ,'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+console.log(computerChoices.length);
+     // I need to reduce computerChoices or game will go on forever.
+    // Creating variables to hold the number of wins, losses, and ties. They start at 0.
 var wins = 0;
 var losses = 0;
-var correctGuess = true;
 var numGuess = 0; 
 
 
 
-console.log(computerChoices.length);
-// var userChoice = event.key;
-// console.log(userChoice);
-
 document.onkeyup = function(event) {
   
     // Determines which key was pressed.
-    // var userChoice = event.key;
+  
     var userGuess = event.key;
     console.log(userGuess)
 
@@ -28,12 +26,16 @@ document.onkeyup = function(event) {
 
         // Alert the userGuess and computerGuess
         alert(userGuess + " is the correct! You are psychic");
-        
+        // userGuessText.textContent = "You chose: " + userGuess;
+        wins++;
+        console.log(wins)
       
       }
 
       else {
         alert("That ain't it")
+        losses++;
+        console.log("losses:" + losses)
       
       }
 
@@ -54,7 +56,7 @@ document.onkeyup = function(event) {
 
 // char[] alpha = "abcdefghijklmnopqrstuvwxyz".toCharArray();
 // psuedo code 
-/* create an onkey function?
+/* create an onkey function? DONE
 /store on key  info and display it?
 /create a random alphabet generator
 /create number to guess
